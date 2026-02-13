@@ -1,6 +1,6 @@
 # Lexega SQL Releases
 
-Pre-built binaries for [Lexega](https://lexega.com) — pre-execution risk analysis for Snowflake SQL.
+Pre-built binaries for [Lexega](https://lexega.com) — pre-execution risk analysis for SQL. Currently supported dialects include Snowflake, PostgreSQL, BigQuery, and Databricks.
 
 ## Download
 
