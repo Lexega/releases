@@ -25,7 +25,7 @@ Download from the [Releases page](https://github.com/Lexega/releases/releases/la
 
 ```bash
 # Linux / macOS — pinned, checksum-verified
-VERSION=v1.11.0                # pick from the Releases page
+VERSION=v1.16.0                # pick from the Releases page
 ASSET=lexega-sql-linux-x64     # linux/darwin × x64/arm64
 curl -sSL -O "https://github.com/Lexega/releases/releases/download/${VERSION}/${ASSET}"
 curl -sSL "https://github.com/Lexega/releases/releases/download/${VERSION}/CHECKSUMS.sha256" | grep " ${ASSET}$" | sha256sum -c -
@@ -46,8 +46,8 @@ steps:
 
 - name: Install Lexega
   run: |
-	curl -sSL -O https://github.com/Lexega/releases/releases/download/v1.11.0/lexega-sql-linux-x64
-	curl -sSL https://github.com/Lexega/releases/releases/download/v1.11.0/CHECKSUMS.sha256 | grep ' lexega-sql-linux-x64$' | sha256sum -c -
+	curl -sSL -O https://github.com/Lexega/releases/releases/download/v1.16.0/lexega-sql-linux-x64
+	curl -sSL https://github.com/Lexega/releases/releases/download/v1.16.0/CHECKSUMS.sha256 | grep ' lexega-sql-linux-x64$' | sha256sum -c -
 	sudo install -m 755 lexega-sql-linux-x64 /usr/local/bin/lexega-sql
 
 - name: SQL Review
