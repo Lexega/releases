@@ -1,5 +1,7 @@
 # Lexega Releases
 
+> **Releases have moved to [Lexega/lexega](https://github.com/Lexega/lexega/releases).** New versions are published there, next to the source of the open edition. This repository is archived: every release up to v2.0.0 stays here at its existing URL, and no newer release will be added.
+
 Pre-built binaries for [Lexega](https://lexega.com): pre-execution analysis for SQL. Dialects: Snowflake, T-SQL (SQL Server), BigQuery, PostgreSQL, Redshift, Databricks and MySQL.
 
 ## What a release contains
@@ -22,7 +24,7 @@ Detects your platform, downloads the latest `lexega-sql`, verifies its SHA-256 c
 
 ## Manual download
 
-Download from the [Releases page](https://github.com/Lexega/releases/releases/latest).
+Download from the [Releases page](https://github.com/Lexega/lexega/releases/latest).
 
 | Platform | Full command line | Open edition |
 |----------|-------------------|--------------|
@@ -37,8 +39,8 @@ Download from the [Releases page](https://github.com/Lexega/releases/releases/la
 # Linux / macOS, pinned and checksum-verified
 VERSION=v2.0.0                 # pick from the Releases page
 ASSET=lexega-sql-linux-x64     # linux/darwin x x64/arm64
-curl -sSL -O "https://github.com/Lexega/releases/releases/download/${VERSION}/${ASSET}"
-curl -sSL "https://github.com/Lexega/releases/releases/download/${VERSION}/CHECKSUMS.sha256" | grep " ${ASSET}$" | sha256sum -c -
+curl -sSL -O "https://github.com/Lexega/lexega/releases/download/${VERSION}/${ASSET}"
+curl -sSL "https://github.com/Lexega/lexega/releases/download/${VERSION}/CHECKSUMS.sha256" | grep " ${ASSET}$" | sha256sum -c -
 sudo install -m 755 "${ASSET}" /usr/local/bin/lexega-sql
 
 # Verify
@@ -56,8 +58,8 @@ steps:
 
   - name: Install Lexega
     run: |
-      curl -sSL -O https://github.com/Lexega/releases/releases/download/v2.0.0/lexega-sql-linux-x64
-      curl -sSL https://github.com/Lexega/releases/releases/download/v2.0.0/CHECKSUMS.sha256 | grep ' lexega-sql-linux-x64$' | sha256sum -c -
+      curl -sSL -O https://github.com/Lexega/lexega/releases/download/v2.0.0/lexega-sql-linux-x64
+      curl -sSL https://github.com/Lexega/lexega/releases/download/v2.0.0/CHECKSUMS.sha256 | grep ' lexega-sql-linux-x64$' | sha256sum -c -
       sudo install -m 755 lexega-sql-linux-x64 /usr/local/bin/lexega-sql
 
   - name: SQL Review
